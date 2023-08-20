@@ -1,0 +1,119 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hé 
+    - bonjour 
+    - salut 
+    - bonjour 
+    - bonjour 
+    - bonsoir 
+    - moin 
+    - hé 
+    - allons-y 
+    - hé mec 
+    - bonjour 
+    - bonsoir 
+    - bon après-midi
+
+- intent: goodbye
+  examples: |
+    - cu
+    - au revoir
+    - à plus tard
+    - bonne nuit
+    - au revoir
+    - au revoir
+    - passe une bonne journée
+    - À un de ces quatre
+    - Bye Bye
+    - à plus tard
+
+- intent: affirm
+  examples: |
+    - Oui
+     - y
+     - en effet
+     - bien sûr
+     - Ça a l'air bien
+     - correct
+
+- intent: deny
+  examples: |
+    - Non
+     -n
+     - jamais
+     - Je ne pense pas
+     - n'aime pas ça
+     - certainement pas
+     - pas vraiment
+
+- intent: mood_great
+  examples: |
+    - parfait
+     - super
+     - incroyable
+     - se sentir comme un roi
+     - merveilleux
+     - je me sens très bien
+     - Je suis génial
+     - Je suis génial
+     - Je vais sauver le monde
+     - super content
+     - extrêmement bon
+     - tellement parfait
+     - si bon
+     - tellement parfait
+
+- intent: mood_unhappy
+  examples: |
+    - ma journée a été horrible
+     - Je suis triste
+     - je ne me sens pas très bien
+     - je suis déçu
+     - hyper triste
+     - Je suis tellement triste
+     - triste
+     - très triste
+     - malheureux
+     - pas bon
+     - pas très bien
+     - extrêmement triste
+     - si triste
+     - si triste
+
+- intent: bot_challenge
+  examples: |
+    - Etes-vous un robot?
+     - Êtes-vous un être humain?
+     - est-ce que je parle à un bot ?
+     - Est-ce que je parle à un humain ?
+
+
+- intent: reponse_salutation
+  examples: |
+    - oui je vais bien et toi ?
+    - ça va
+    - je vais bien Dieu merci
+    - je vais très bien 
+
+
+- intent: ask_name
+  examples: |
+    - Comment t'appelles-tu ?
+    - Quel est ton nom ?
+    - Qui es-tu ?
+
+- intent: ask_location
+  examples: |
+    - Où es-tu situé ?
+    - D'où parles-tu ?
+    - Quelle est ta localisation ?
+
+- intent: ask_time
+  examples: |
+    - Quelle heure est-il ?
+    - Donne-moi l'heure actuelle.
+
+

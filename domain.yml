@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - reponse_salutation
+  - ask_name
+  - ask_location
+  - ask_time
+
+responses:
+  utter_greet:
+  - text: "Salut ! Comment puis-je t'aider ?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_reponse_salutation:
+  - text: "C'est bien ça , je suis un chat bot et je là pour vous aidez, dite moi juste ce que vous voulez."
+
+  utter_goodbye:
+  - text: "Au revoir ! À la prochaine."
+
+  utter_ask_name:
+  - text: "Je m'appelle ChatBot. Et toi ? Comment puis-je t'aider ?"
+
+  utter_ask_location:
+  - text: "Je suis un chatbot, donc je n'ai pas de localisation physique. Comment puis-je t'aider ?"
+
+  utter_ask_time:
+  - text: "L'heure actuelle est {{time}}."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
