@@ -1,49 +1,49 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  - salut
+  - au_revoir
+  - confirmer
+  - refuser
+  - humeur_content
+  - humeur_mecontent
   - bot_challenge
   - reponse_salutation
-  - ask_name
-  - ask_location
-  - ask_time
+  - demander_nom
+  - demander_emplacement
+  - demander_heure
 
 responses:
-  utter_greet:
-  - text: "Salut ! Comment puis-je t'aider ?"
+  utter_salut:
+  - text: "Salut ! Comment puis-je vous aidez ?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  utter_remonter_morale:
+  - text: "Voici quelque chose pour vous faire remonter le moral:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_satisfaction:
+  - text: "Cela vous a t-il aider?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_content:
+  - text: "Super, continuez ainsi!"
 
   utter_reponse_salutation:
-  - text: "C'est bien ça , je suis un chat bot et je là pour vous aidez, dite moi juste ce que vous voulez."
+  - text: "C'est bien ça , je suis un chat bot et je suis là pour vous aidez, dite moi juste ce que vous voulez."
 
-  utter_goodbye:
+  utter_au_revoir:
   - text: "Au revoir ! À la prochaine."
 
-  utter_ask_name:
-  - text: "Je m'appelle ChatBot. Et toi ? Comment puis-je t'aider ?"
+  utter_demander_nom:
+  - text: "Je m'appelle AideClient. Et toi ? Comment puis-je t'aider ?"
 
-  utter_ask_location:
-  - text: "Je suis un chatbot, donc je n'ai pas de localisation physique. Comment puis-je t'aider ?"
+  utter_demander_emplacement:
+  - text: "Je suis un bot(robot), donc je n'ai pas de localisation physique. Comment puis-je t'aider ?"
 
-  utter_ask_time:
+  utter_demander_heure:
   - text: "L'heure actuelle est {{time}}."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Je suis un bot(robot), mise au point pour vous faciliter vos achats."
 
 session_config:
   session_expiration_time: 60

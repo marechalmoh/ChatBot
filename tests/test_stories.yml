@@ -1,87 +1,87 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
+#### Tsaluts file contains tests to evaluate that your bot behaves as expected.
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: Joyeux chemin 1
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      Salut ici!
+    intent: salut
+  - action: utter_salut
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      génial
+    intent: humeur_content
+  - action: utter_content
 
-- story: happy path 2
+- story: Joyeux chemin 2
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      Salut ici!
+    intent: salut
+  - action: utter_salut
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      génial
+    intent: humeur_content
+  - action: utter_content
   - user: |
       bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+    intent: au_revoir
+  - action: utter_au_revoir
 
-- story: sad path 1
+- story: triste chemin 1
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      salut
+    intent: salut
+  - action: utter_salut
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      pas bien
+    intent: humeur_mecontent
+  - action: utter_remonter_morale
+  - action: utter_satisfaction
   - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      oui
+    intent: confirmer
+  - action: utter_content
 
-- story: sad path 2
+- story: triste chemin 2
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      salut
+    intent: salut
+  - action: utter_salut
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      pas bien
+    intent: humeur_mecontent
+  - action: utter_remonter_morale
+  - action: utter_satisfaction
   - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      pas vraiment
+    intent: refuser
+  - action: utter_au_revoir
 
-- story: sad path 3
+- story: triste chemin 3
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
+      salut
+    intent: salut
+  - action: utter_salut
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      très mauvais
+    intent: humeur_mecontent
+  - action: utter_remonter_morale
+  - action: utter_satisfaction
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      non
+    intent: refuser
+  - action: utter_au_revoir
 
-- story: say goodbye
+- story: dis au_revoir
   steps:
   - user: |
       bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+    intent: au_revoir
+  - action: utter_au_revoir
 
 - story: bot challenge
   steps:

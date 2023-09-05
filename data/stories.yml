@@ -2,32 +2,32 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: Joyeux chemin
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
+  - intent: salut
+  - action: utter_salut
+  - intent: humeur_content
+  - action: utter_content
+
+- story: triste chemin 1
+  steps:
+  - intent: salut
+  - action: utter_salut
+  - intent: humeur_mecontent
+  - action: utter_remonter_morale
+  - action: utter_satisfaction
+  - intent: confirmer
   - action: utter_happy
 
-- story: sad path 1
+- story: triste chemin 2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: salut
+  - action: utter_salut
+  - intent: humeur_mecontent
+  - action: utter_remonter_morale
+  - action: utter_satisfaction
+  - intent: refuser
+  - action: utter_au_revoir
 
 
 - story: reponse au chat bot

@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: salut
   examples: |
     - hé 
     - bonjour 
@@ -17,7 +17,7 @@ nlu:
     - bonsoir 
     - bon après-midi
 
-- intent: goodbye
+- intent: au_revoir
   examples: |
     - cu
     - au revoir
@@ -30,16 +30,16 @@ nlu:
     - Bye Bye
     - à plus tard
 
-- intent: affirm
+- intent: confirmer
   examples: |
     - Oui
-     - y
+     - o
      - en effet
      - bien sûr
      - Ça a l'air bien
      - correct
 
-- intent: deny
+- intent: refuser
   examples: |
     - Non
      -n
@@ -49,7 +49,7 @@ nlu:
      - certainement pas
      - pas vraiment
 
-- intent: mood_great
+- intent: humeur_content
   examples: |
     - parfait
      - super
@@ -66,7 +66,7 @@ nlu:
      - si bon
      - tellement parfait
 
-- intent: mood_unhappy
+- intent: humeur_mecontent
   examples: |
     - ma journée a été horrible
      - Je suis triste
@@ -99,19 +99,19 @@ nlu:
     - je vais très bien 
 
 
-- intent: ask_name
+- intent: demander_nom
   examples: |
     - Comment t'appelles-tu ?
     - Quel est ton nom ?
     - Qui es-tu ?
 
-- intent: ask_location
+- intent: demander_emplacement
   examples: |
     - Où es-tu situé ?
     - D'où parles-tu ?
     - Quelle est ta localisation ?
 
-- intent: ask_time
+- intent: demander_heure
   examples: |
     - Quelle heure est-il ?
     - Donne-moi l'heure actuelle.
