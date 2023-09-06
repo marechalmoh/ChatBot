@@ -42,16 +42,16 @@
 #  queue: queue
 
 
-import mysql.connector
+# import mysql.connector
 
-db_connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="db_chat_bot"
-)
+# db_connection = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     password="",
+#     database="db_chat_bot"
+# )
 
-cursor = db_connection.cursor()
-cursor.execute("SELECT * FROM your_table")
-results = cursor.fetchall()
+# cursor = db_connection.cursor()
+# cursor.execute("SELECT * FROM your_table")
+# results = cursor.fetchall()
 

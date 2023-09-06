@@ -17,3 +17,8 @@ rules:
   steps:
   - intent: reponse_salut
   - action: utter_reponse_salut
+
+- rule: Remonter le morale
+  steps:
+  - intent: humeur_mecontant
+  - action: utter_reponse_humeur_mecontant

@@ -8,7 +8,7 @@ intents:
   - humeur_content
   - humeur_mecontent
   - bot_challenge
-  - reponse_salutation
+  - reponse_salut
   - demander_nom
   - demander_emplacement
   - demander_heure

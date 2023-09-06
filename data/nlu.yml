@@ -90,6 +90,8 @@ nlu:
   examples: |
     - Etes-vous un robot?
      - Êtes-vous un être humain?
+     - Es tu un homme ?
+     - Es tu vivant?
      - est-ce que je parle à un bot ?
      - Est-ce que je parle à un humain ?
 
@@ -103,6 +105,8 @@ nlu:
     - cool
     - Bien
     - Je ne me plains pas
+    - cv
+    - ca va
 
 
 - intent: demander_nom
