@@ -27,8 +27,8 @@ responses:
   utter_content:
   - text: "Super, continuez ainsi!"
 
-  utter_reponse_salutation:
-  - text: "C'est bien ça , je suis un chat bot et je suis là pour vous aidez, dite moi juste ce que vous voulez."
+  utter_reponse_salut:
+  - text: "Cela m'envoie ravi, je suis **Help Client** et je suis là pour vous aidez à faire vos achats, dites moi juste ce que vous voulez."
 
   utter_au_revoir:
   - text: "Au revoir ! À la prochaine."
@@ -43,7 +43,7 @@ responses:
   - text: "L'heure actuelle est {{time}}."
 
   utter_iamabot:
-  - text: "Je suis un bot(robot), mise au point pour vous faciliter vos achats."
+  - text: "Je suis un bot(robot), mis au point pour vous faciliter vos achats."
 
 session_config:
   session_expiration_time: 60

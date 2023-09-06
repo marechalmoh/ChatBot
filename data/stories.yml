@@ -17,7 +17,7 @@ stories:
   - action: utter_remonter_morale
   - action: utter_satisfaction
   - intent: confirmer
-  - action: utter_happy
+  - action: utter_content
 
 - story: triste chemin 2
   steps:
@@ -30,23 +30,23 @@ stories:
   - action: utter_au_revoir
 
 
-- story: reponse au chat bot
+- story: réponse au chat bot
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: reponse_salutation
-  - action: utter_reponse_salutation
+  - intent: salut
+  - action: utter_salut
+  - intent: reponse_salut
+  - action: utter_reponse_salut
   
 
 - story: conversation complexe
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_name
-  - action: utter_ask_name
-  - intent: ask_location
-  - action: utter_ask_location
-  - intent: ask_time
-  - action: utter_ask_time
+  - intent: salut
+  - action: utter_salut
+  - intent: demander_nom
+  - action: utter_demander_nom
+  - intent: demander_emplacement
+  - action: utter_demander_emplacement
+  - intent: demander_heure
+  - action: utter_demander_heure
 
       

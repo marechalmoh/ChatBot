@@ -16,10 +16,12 @@ nlu:
     - bonjour 
     - bonsoir 
     - bon après-midi
+    - C'est comment?
+    - C'est comment
 
 - intent: au_revoir
   examples: |
-    - cu
+    - a +
     - au revoir
     - à plus tard
     - bonne nuit
@@ -29,6 +31,7 @@ nlu:
     - À un de ces quatre
     - Bye Bye
     - à plus tard
+    - à plus
 
 - intent: confirmer
   examples: |
@@ -91,12 +94,15 @@ nlu:
      - Est-ce que je parle à un humain ?
 
 
-- intent: reponse_salutation
+- intent: reponse_salut
   examples: |
     - oui je vais bien et toi ?
     - ça va
     - je vais bien Dieu merci
     - je vais très bien 
+    - cool
+    - Bien
+    - Je ne me plains pas
 
 
 - intent: demander_nom
