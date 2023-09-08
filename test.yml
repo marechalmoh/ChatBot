@@ -1,44 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-# #
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
-# class DemanderNomProduit(Action):
-#     def name(self) -> Text:
-#         return "action_demander_nom_produit"
-    
-#     def run(self, dispatcher: CollectingDispatcher,
-#         tracker: Tracker,
-#         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-
-#         dispatcher.utter_message(text="Hello World!")
-
-#         return []
-    
 from typing import Any, Text, Dict, List, Union
 
 from rasa_sdk import Action, Tracker
@@ -48,7 +7,7 @@ from rasa_sdk.forms import FormValidationAction, FormAction
 
 class DemanderInfosProduitsForm(FormAction):
     def name(self) -> Text:
-        return "action_formulaire_demander_infos_produit"
+        return "demander_infos_produits_form"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
@@ -90,14 +49,7 @@ class ActionDemanderInfosProduits(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        produit = next(tracker.get_latest_entity_values("produit"))
-        taille = next(tracker.get_latest_entity_values("taille"))
-        categorie = next(tracker.get_latest_entity_values("categorie"))
-        couleur = next(tracker.get_latest_entity_values("couleur"))
-        
-        message = f"PRODUIT : {produit}, TAILLE : {taille}, CATEGORIE : {categorie}, COULEUR : {couleur}"
-        dispatcher.utter_message(text=message)
-        
+        # Ici, vous pouvez utiliser les valeurs des slots pour récupérer des informations sur le produit
+        # et répondre à la demande de l'utilisateur.
         return []
-
 

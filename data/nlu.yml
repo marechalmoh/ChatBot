@@ -36,64 +36,64 @@ nlu:
 - intent: confirmer
   examples: |
     - Oui
-     - o
-     - en effet
-     - bien sûr
-     - Ça a l'air bien
-     - correct
+    - o
+    - en effet
+    - bien sûr
+    - Ça a l'air bien
+    - correct
 
 - intent: refuser
   examples: |
     - Non
-     -n
-     - jamais
-     - Je ne pense pas
-     - n'aime pas ça
-     - certainement pas
-     - pas vraiment
+    - n
+    - jamais
+    - Je ne pense pas
+    - n'aime pas ça
+    - certainement pas
+    - pas vraiment
 
 - intent: humeur_content
   examples: |
     - parfait
-     - super
-     - incroyable
-     - se sentir comme un roi
-     - merveilleux
-     - je me sens très bien
-     - Je suis génial
-     - Je suis génial
-     - Je vais sauver le monde
-     - super content
-     - extrêmement bon
-     - tellement parfait
-     - si bon
-     - tellement parfait
+    - super
+    - incroyable
+    - se sentir comme un roi
+    - merveilleux
+    - je me sens très bien
+    - Je suis génial
+    - Je suis génial
+    - Je vais sauver le monde
+    - super content
+    - extrêmement bon
+    - tellement parfait
+    - si bon
+    - tellement parfait
 
 - intent: humeur_mecontent
   examples: |
     - ma journée a été horrible
-     - Je suis triste
-     - je ne me sens pas très bien
-     - je suis déçu
-     - hyper triste
-     - Je suis tellement triste
-     - triste
-     - très triste
-     - malheureux
-     - pas bon
-     - pas très bien
-     - extrêmement triste
-     - si triste
-     - si triste
+    - Je suis triste
+    - je ne me sens pas très bien
+    - je suis déçu
+    - hyper triste
+    - Je suis tellement triste
+    - triste
+    - très triste
+    - malheureux
+    - pas bon
+    - pas très bien
+    - extrêmement triste
+    - si triste
+    - si triste
 
 - intent: bot_challenge
   examples: |
     - Etes-vous un robot?
-     - Êtes-vous un être humain?
-     - Es tu un homme ?
-     - Es tu vivant?
-     - est-ce que je parle à un bot ?
-     - Est-ce que je parle à un humain ?
+    - Êtes-vous un être humain?
+    - Es tu un homme ?
+    - Es tu vivant?
+    - est-ce que je parle à un bot ?
+    - Est-ce que je parle à un humain ?
 
 
 - intent: reponse_salut
@@ -125,5 +125,146 @@ nlu:
   examples: |
     - Quelle heure est-il ?
     - Donne-moi l'heure actuelle.
+
+- intent: demander_infos_produits
+  examples: |
+    - Est-ce que vous avez [nom](produit)?
+    - as tu [nom](produit)?
+    - Avez ce [nom](produit)?
+    - [nom](produit)?
+    - est ce que [nom](produit) est diponible?
+    - je cherche un [nom](produit)
+    - Cherche [nom](produit) s'il vous plaît.
+    - [produit] dispo?
+    - [produit] prix?
+    - [nom](produit) en [couleur](couleur)?
+    - [nom](produit) [dispo](disponibilité)?
+    - [nom](produit) [grande](quantite) [petit](quantite)?
+    - Vous avez [nom](produit) de [marque](marque)?
+    - [nom](produit) [taille](taille)?
+    - [produits](categorie) [offre spéciale](promotion)?
+    - Avez-vous [nom](produit) pour [Black Friday](date)?
+
+- intent: demander_prix_produit
+  examples: |
+    - Combien ça coûte [nom](produit)?
+    - Prix [nom](produit)?
+    - [nom](produit) coût?
+    - [nom](produit) coût combien?
+    - [nom](produit) tarif?
+    - [nom](produit) prix en ce moment?
+
+- intent: demander_disponibilite_produit
+  examples: |
+    - [nom](produit) en stock?
+    - [nom](produit) disponible?
+    - [nom](produit) là?
+    - [nom](produit) en vente?
+
+- intent: demander_details_produit
+  examples: |
+    - Détails sur [nom](produit)?
+    - [nom](produit) informations?
+    - [nom](produit) caractéristiques?
+    - Plus sur [nom](produit)?
+    - [nom](produit) spécifications?
+
+- intent: demander_date_disponibilite
+  examples: |
+    - Quand [nom](produit) disponible?
+    - [nom](produit) en stock à partir de quand?
+    - [nom](produit) date d'arrivée?
+
+- intent: demander_achat_produit
+  examples: |
+    - Comment acheter [nom](produit)?
+    - [nom](produit) achat comment?
+    - [nom](produit) commander?
+    - [nom](produit) où acheter?
+
+
+
+- lookup: produit
+  examples: |
+    - tecno
+    - tecno spark
+    - samsung
+    - tablette
+    - itel
+    - pc hp core i3
+    - pc hp core i5
+    - pc hp core i7
+    - pc toshiba
+    - pc dell
+    - clavier
+    - disk dur
+    - RAM
+    - souris
+    - chemise
+    - montre
+    - iphone
+    - iphone 13 pro
+    - pantalon
+    - chapeau
+    - air max
+    - nike
+    - jordan
+    - rolex submariner
+    - air pods
+
+
+- lookup: categorie
+  examples: |
+    - telephone
+    - ordinateur
+    - vetement
+    - montre
+    - iphone
+    - chaussure
+    - électronique
+    - vêtements
+    - mode
+    - informatique
+    - chaussures
+    - accessoires
+    - maison
+    - meubles
+    - alimentation
+    - beauté
+
+- lookup: marque
+  examples: |
+    - Samsung
+    - Apple
+    - Nike
+    - Adidas
+    - HP
+    - Dell
+    - Sony
+    - Lenovo
+    - Gucci
+    - Chanel
+
+- lookup: taille
+  examples: |
+    - petit
+    - moyen
+    - grand
+    - XL
+    - 36
+    - 42
+    - S
+    - M
+    - L
+
+- lookup: date
+  examples: |
+    - aujourd'hui
+    - demain
+    - ce week-end
+    - le 15 août
+    - le 25 décembre
+    - la semaine prochaine
+    - dans un mois
 
 

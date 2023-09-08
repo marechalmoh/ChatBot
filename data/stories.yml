@@ -36,6 +36,7 @@ stories:
   - action: utter_salut
   - intent: reponse_salut
   - action: utter_reponse_salut
+  - action: utter_au_revoir
   
 
 - story: conversation complexe
@@ -49,4 +50,6 @@ stories:
   - intent: demander_heure
   - action: utter_demander_heure
 
-      
+- story: réponse au chat bot
+  steps:
+  - intent: demander_infos_produits
