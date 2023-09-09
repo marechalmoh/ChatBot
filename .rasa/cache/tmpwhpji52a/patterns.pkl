@@ -1,0 +1,22 @@
+[
+  {
+    "name": "produit",
+    "pattern": "(\\btecno\\b|\\btecno\\ spark\\b|\\bsamsung\\b|\\btablette\\b|\\bitel\\b|\\bpc\\ hp\\ core\\ i3\\b|\\bpc\\ hp\\ core\\ i5\\b|\\bpc\\ hp\\ core\\ i7\\b|\\bpc\\ toshiba\\b|\\bpc\\ dell\\b|\\bclavier\\b|\\bdisk\\ dur\\b|\\bRAM\\b|\\bsouris\\b|\\bchemise\\b|\\bmontre\\b|\\biphone\\b|\\biphone\\ 13\\ pro\\b|\\bpantalon\\b|\\bchapeau\\b|\\bair\\ max\\b|\\bnike\\b|\\bjordan\\b|\\brolex\\ submariner\\b|\\bair\\ pods\\b)"
+  },
+  {
+    "name": "categorie",
+    "pattern": "(\\btelephone\\b|\\bordinateur\\b|\\bvetement\\b|\\bmontre\\b|\\biphone\\b|\\bchaussure\\b|\\bélectronique\\b|\\bvêtements\\b|\\bmode\\b|\\binformatique\\b|\\bchaussures\\b|\\baccessoires\\b|\\bmaison\\b|\\bmeubles\\b|\\balimentation\\b|\\bbeauté\\b)"
+  },
+  {
+    "name": "marque",
+    "pattern": "(\\bSamsung\\b|\\bApple\\b|\\bNike\\b|\\bAdidas\\b|\\bHP\\b|\\bDell\\b|\\bSony\\b|\\bLenovo\\b|\\bGucci\\b|\\bChanel\\b)"
+  },
+  {
+    "name": "taille",
+    "pattern": "(\\bpetit\\b|\\bmoyen\\b|\\bgrand\\b|\\bXL\\b|\\b36\\b|\\b42\\b|\\bS\\b|\\bM\\b|\\bL\\b)"
+  },
+  {
+    "name": "date",
+    "pattern": "(\\baujourd'hui\\b|\\bdemain\\b|\\bce\\ week\\-end\\b|\\ble\\ 15\\ août\\b|\\ble\\ 25\\ décembre\\b|\\bla\\ semaine\\ prochaine\\b|\\bdans\\ un\\ mois\\b)"
+  }
+]

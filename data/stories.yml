@@ -1,7 +1,85 @@
-version: "3.1"
+# version: "3.1"
 
+# stories:
+
+# - story: Joyeux chemin
+#   steps:
+#   - intent: salut
+#   - action: utter_salut
+#   - intent: humeur_content
+#   - action: utter_content
+
+# - story: triste chemin 1
+#   steps:
+#   - intent: salut
+#   - action: utter_salut
+#   - intent: humeur_mecontent
+#   - action: utter_remonter_morale
+#   - action: utter_satisfaction
+#   - intent: confirmer
+#   - action: utter_content
+
+# - story: triste chemin 2
+#   steps:
+#   - intent: salut
+#   - action: utter_salut
+#   - intent: humeur_mecontent
+#   - action: utter_remonter_morale
+#   - action: utter_satisfaction
+#   - intent: refuser
+#   - action: utter_au_revoir
+
+
+# - story: réponse au chat bot
+#   steps:
+#   - intent: salut
+#   - action: utter_salut
+#   - intent: reponse_salut
+#   - action: utter_reponse_salut
+#   - action: utter_au_revoir
+  
+
+# - story: conversation complexe
+#   steps:
+#   - intent: salut
+#   - action: utter_salut
+#   - intent: demander_nom
+#   - action: utter_demander_nom
+#   - intent: demander_emplacement
+#   - action: utter_demander_emplacement
+#   - intent: demander_heure
+#   - action: utter_demander_heure
+
+# - story: Demander infos produits
+#   steps:
+#   - intent: demander_infos_produits
+#   - action: action_demander_infos_produits
+
+# - story: Demander prix produits 
+#   steps:
+#   - intent: demander_prix_produits
+#   - action: action_demander_prix_produits
+
+# - story: Demander disponibilite produits 
+#   steps:
+#   - intent: demander_disponibilite_produits
+#   - action: action_demander_disponibilite_produits
+
+# - story: Demander details produits
+#   steps:
+#   - intent: demander_details_produits
+#   - action: action_demander_details_produits
+
+# - story: Demander date disponibilite
+#   steps:
+#   - intent: demander_date_disponibilite
+#   - action: action_demander_date_disponibilite
+
+# - story: Demander achat produits 
+#   steps:
+#   - intent: demander_achat_produits
+#   - action: action_demander_achat_produits
 stories:
-
 - story: Joyeux chemin
   steps:
   - intent: salut
@@ -15,9 +93,8 @@ stories:
   - action: utter_salut
   - intent: humeur_mecontent
   - action: utter_remonter_morale
-  - action: utter_satisfaction
   - intent: confirmer
-  - action: utter_content
+  - action: utter_satisfaction
 
 - story: triste chemin 2
   steps:
@@ -25,10 +102,8 @@ stories:
   - action: utter_salut
   - intent: humeur_mecontent
   - action: utter_remonter_morale
-  - action: utter_satisfaction
   - intent: refuser
   - action: utter_au_revoir
-
 
 - story: réponse au chat bot
   steps:
@@ -36,8 +111,6 @@ stories:
   - action: utter_salut
   - intent: reponse_salut
   - action: utter_reponse_salut
-  - action: utter_au_revoir
-  
 
 - story: conversation complexe
   steps:
@@ -50,6 +123,32 @@ stories:
   - intent: demander_heure
   - action: utter_demander_heure
 
-- story: réponse au chat bot
+- story: Demander infos produits
   steps:
   - intent: demander_infos_produits
+  - action: action_demander_infos_produits
+
+- story: Demander prix produits 
+  steps:
+  - intent: demander_prix_produits
+  - action: action_demander_prix_produits
+
+- story: Demander disponibilite produits 
+  steps:
+  - intent: demander_disponibilite_produits
+  - action: action_demander_disponibilite_produits
+
+- story: Demander details produits
+  steps:
+  - intent: demander_details_produits
+  - action: action_demander_details_produits
+
+- story: Demander date disponibilite
+  steps:
+  - intent: demander_date_disponibilite
+  - action: action_demander_date_disponibilite
+
+- story: Demander achat produits 
+  steps:
+  - intent: demander_achat_produits
+  - action: action_demander_achat_produits

@@ -1,8 +1,61 @@
+# version: "3.1"
+
+# rules:
+
+# - rule: Dire au revoir à chaque fois que le l'utilisateur dit au revoir
+#   steps:
+#   - intent: au_revoir
+#   - action: utter_au_revoir
+
+# - rule: Dire 'Je suis un robot' à chaque fois que l'utilisateur engage un challenge
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+
+
+# - rule: Dites se presenter
+#   steps:
+#   - intent: reponse_salut
+#   - action: utter_reponse_salut
+
+# - rule: Remonter le morale
+#   steps:
+#   - intent: humeur_mecontent
+#   - action: utter_remonter_morale
+
+# - rule: Demander infos produits
+#   steps:
+#   - intent: demander_infos_produits
+#   - action: action_demander_infos_produits
+
+# - rule: Demander prix produits 
+#   steps:
+#   - intent: demander_prix_produits
+#   - action: action_demander_prix_produits
+
+# - rule: Demander disponibilite produits 
+#   steps:
+#   - intent: demander_disponibilite_produits
+#   - action: action_demander_disponibilite_produits
+
+# - rule: Demander details produits
+#   steps:
+#   - intent: demander_details_produits
+#   - action: action_demander_details_produits
+
+# - rule: Demander date disponibilite
+#   steps:
+#   - intent: demander_date_disponibilite
+#   - action: action_demander_date_disponibilite
+
+# - rule: Demander achat produits 
+#   steps:
+#   - intent: demander_achat_produits
+#   - action: action_demander_achat_produits
 version: "3.1"
 
 rules:
-
-- rule: Dire au revoir à chaque fois que le l'utilisateur dit au revoir
+- rule: Dire au revoir à chaque fois que l'utilisateur dit au revoir
   steps:
   - intent: au_revoir
   - action: utter_au_revoir
@@ -12,13 +65,44 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-
 - rule: Dites se presenter
   steps:
   - intent: reponse_salut
   - action: utter_reponse_salut
 
-- rule: Remonter le morale
+- rule: Remonter le moral
   steps:
-  - intent: humeur_mecontant
+  - intent: humeur_mecontent
   - action: utter_remonter_morale
+
+- rule: Demander infos produits
+  steps:
+  - intent: demander_infos_produits
+  - action: action_demander_infos_produits
+
+- rule: Demander prix produits 
+  steps:
+  - intent: demander_prix_produits
+  - action: action_demander_prix_produits
+
+- rule: Demander disponibilite produits 
+  steps:
+  - intent: demander_disponibilite_produits
+  - action: action_demander_disponibilite_produits
+
+- rule: Demander details produits
+  steps:
+  - intent: demander_details_produits
+  - action: action_demander_details_produits
+
+- rule: Demander date disponibilite
+  steps:
+  - intent: demander_date_disponibilite
+  - action: action_demander_date_disponibilite
+
+- rule: Demander achat produits 
+  steps:
+  - intent: demander_achat_produits
+  - action: action_demander_achat_produits
+
+

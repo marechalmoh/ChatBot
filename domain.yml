@@ -13,11 +13,19 @@ intents:
   - demander_emplacement
   - demander_heure
   - demander_infos_produits
-  - demander_prix_produit
-  - demander_disponibilite_produit
-  - demander_details_produit
+  - demander_prix_produits
+  - demander_disponibilite_produits
+  - demander_details_produits
   - demander_date_disponibilite
-  - demander_achat_produit
+  - demander_achat_produits
+
+actions:
+  - action_demander_infos_produits
+  - action_demander_prix_produits
+  - action_demander_disponibilite_produits
+  - action_demander_details_produits
+  - action_demander_date_disponibilite
+  - action_demander_achat_produits
 
 responses:
   utter_salut:
@@ -35,6 +43,21 @@ responses:
 
   utter_reponse_salut:
   - text: "Cela m'envoie ravi, je suis **Help Client** et je suis là pour vous aidez à faire vos achats, dites moi juste ce que vous voulez."
+
+  utter_au_revoir:
+  - text: "Au revoir ! À la prochaine."
+
+  utter_demander_nom:
+  - text: "Je m'appelle AideClient. Et toi ? Comment puis-je t'aider ?"
+
+  utter_demander_emplacement:
+  - text: "Je suis un bot(robot), donc je n'ai pas de localisation physique. Comment puis-je t'aider ?"
+
+  utter_demander_heure:
+  - text: "L'heure actuelle est {{time}}."
+
+  utter_iamabot:
+  - text: "Je suis un bot(robot), mis au point pour vous faciliter vos achats."
 
 # Definition des entitées et des slots 
 entities:
@@ -103,49 +126,19 @@ slots:
     mappings:
     - type: from_entity
       entity: couleur
-action: 
-  - action_demander_nom_produit
 action:
-  - action_formulaire_demander_non_produit
-action:
-  - action_demander_infos_produit
-action:
-  - action_formulaire_demander_infos_produit
-action:
-  - action_demander_prix_produit
-action: 
-  - action_formulaire_demander_prix_produit
-action:
-  - action_demander_disponibilite_produit
-action:
-  - action_formulaire_demander_disponibilite_produit
-action:
-  - action_demander_details_produit
-action:
-  - action_formulaire_demander_details_produit
-action:
+  - action_demander_infos_produits
+  - action_formulaire_demander_infos_produits
+  - action_demander_prix_produits 
+  - action_formulaire_demander_prix_produits
+  - action_demander_disponibilite_produits
+  - action_formulaire_demander_disponibilite_produits
+  - action_demander_details_produits
+  - action_formulaire_demander_details_produits
   - action_demander_date_disponibilite
-action:
   - action_formulaire_demander_date_disponibilite
-action:
-  - action_demander_achat_produit
-action:
-  - action_formulaire_demander_achat_produit
-
-utter_au_revoir:
-- text: "Au revoir ! À la prochaine."
-
-utter_demander_nom:
-- text: "Je m'appelle AideClient. Et toi ? Comment puis-je t'aider ?"
-
-utter_demander_emplacement:
-- text: "Je suis un bot(robot), donc je n'ai pas de localisation physique. Comment puis-je t'aider ?"
-
-utter_demander_heure:
-- text: "L'heure actuelle est {{time}}."
-
-utter_iamabot:
-- text: "Je suis un bot(robot), mis au point pour vous faciliter vos achats."
+  - action_demander_achat_produits
+  - action_formulaire_demander_achat_pro
 
 session_config:
   session_expiration_time: 60

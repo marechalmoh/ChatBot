@@ -142,10 +142,16 @@ nlu:
     - [nom](produit) [grande](quantite) [petit](quantite)?
     - Vous avez [nom](produit) de [marque](marque)?
     - [nom](produit) [taille](taille)?
-    - [produits](categorie) [offre spéciale](promotion)?
     - Avez-vous [nom](produit) pour [Black Friday](date)?
+    - Quelle est la taille du **pantalon** ?
+    - Dis-moi si le **chemise** est disponible en taille **XL**.
+    - Avez-vous la **chemise en taille M** ?
+    - Cherche un **iPhone 13 Pro** de taille **XXL**.
+    - [nom](produit) [taille](taille)?
+    - [nom](produit) de taille **36** en stock?
+    - [nom](produit) disponible en taille **S**?
 
-- intent: demander_prix_produit
+- intent: demander_prix_produits
   examples: |
     - Combien ça coûte [nom](produit)?
     - Prix [nom](produit)?
@@ -153,32 +159,76 @@ nlu:
     - [nom](produit) coût combien?
     - [nom](produit) tarif?
     - [nom](produit) prix en ce moment?
+    - Quel est le prix de l'**iPhone 13 Pro** ?
+    - Donne-moi le tarif de la **souris sans fil**.
+    - Combien coûte un **PC Dell** ?
+    - Prix de la **chemise rouge** ?
+    - À combien est vendue la **montre Rolex Submariner** ?
+    - Donne-moi le prix de **[nom](produit)**.
+    - [nom](produit) prix?
+    - [nom](produit) tarif?
+    - Combien coûte l'**iPhone 13 Pro** de taille **L** ?
+    - Donne-moi le prix d'un **pantalon XL**.
+    - Prix de la **chemise bleue en taille S** ?
+    - À combien est vendue la **montre Rolex Submariner** de taille **XXL** ?
+    - [nom](produit) [taille](taille) coût?
+    - [nom](produit) [taille](taille) prix en ce moment?
 
-- intent: demander_disponibilite_produit
+- intent: demander_disponibilite_produits
   examples: |
     - [nom](produit) en stock?
     - [nom](produit) disponible?
     - [nom](produit) là?
     - [nom](produit) en vente?
+    - Est-ce que le **PC HP Core i7** est disponible ?
+    - Y a-t-il des **air pods** en stock ?
+    - Le **Samsung Galaxy** est-il en vente ?
+    - [nom](produit) est-il épuisé ?
+    - Avez-vous des **chaussures Nike** disponibles ?
+    - [nom](produit) en stock?
+    - [nom](produit) disponible?
+    - [nom](produit) là?
 
-- intent: demander_details_produit
+- intent: demander_details_produits
   examples: |
     - Détails sur [nom](produit)?
     - [nom](produit) informations?
     - [nom](produit) caractéristiques?
     - Plus sur [nom](produit)?
     - [nom](produit) spécifications?
+    - Donnez-moi plus de détails sur l'**ordinateur portable Lenovo**.
+    - Informations sur la **tablette Samsung**.
+    - Je veux en savoir plus sur le **chemise bleue**.
+    - Caractéristiques de l'**iPhone** ?
+    - Spécifications de la **montre Gucci**.
+    - [nom](produit) informations?
+    - [nom](produit) caractéristiques?
+    - Plus sur [nom](produit)?
 
 - intent: demander_date_disponibilite
   examples: |
     - Quand [nom](produit) disponible?
     - [nom](produit) en stock à partir de quand?
     - [nom](produit) date d'arrivée?
+    - Quand sera disponible le **PC Toshiba** ?
+    - À partir de quelle date l'**iPhone 13 Pro** sera en stock ?
+    - Date d'arrivée du **PC HP Core i5** ?
+    - [nom](produit) sera-t-il disponible ce week-end ?
+    - À quelle date puis-je acheter le **chapeau** ?
+    - [nom](produit) date d'arrivée?
+    - [nom](produit) en stock à partir de quand?
 
-- intent: demander_achat_produit
+- intent: demander_achat_produits
   examples: |
     - Comment acheter [nom](produit)?
     - [nom](produit) achat comment?
+    - [nom](produit) commander?
+    - [nom](produit) où acheter?
+    - Comment puis-je commander l'**iPhone 13 Pro** ?
+    - Où puis-je acheter le **PC Dell** ?
+    - Processus d'achat pour les **air max** ?
+    - [nom](produit) achat comment?
+    - Je veux commander un **PC Toshiba**.
     - [nom](produit) commander?
     - [nom](produit) où acheter?
 
@@ -266,5 +316,3 @@ nlu:
     - le 25 décembre
     - la semaine prochaine
     - dans un mois
-
-
