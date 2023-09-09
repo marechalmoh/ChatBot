@@ -42,15 +42,16 @@
 from typing import Any, Text, Dict, List, Union
 
 from rasa_sdk import Action, Tracker
+from rasa_sdk import Tracker, FormValidationAction
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormValidationAction, FormAction
+# from rasa_sdk.forms import FormValidationAction, FormValidationAction
 
 
 #
 #DEMANDER INFOS PRODUITS
 #
-class DemanderInfosProduitsForm(FormAction):
+class DemanderInfosProduitsForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_infos_produits"
 
@@ -106,7 +107,7 @@ class ActionDemanderInfosProduits(Action):
 #
 #DEMANDER PRIX PRODUITS
 #
-class DemanderPrixProduitsForm(FormAction):
+class DemanderPrixProduitsForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_prix_produits"
 
@@ -154,7 +155,7 @@ class ActionDemanderPrixProduits(Action):
 #
 #DEMANDER DISPONIBILITE PRODUITS
 #
-class DemanderDisponibiliteProduitsForm(FormAction):
+class DemanderDisponibiliteProduitsForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_disponibilite_produits"
 
@@ -203,7 +204,7 @@ class ActionDemanderDisponibiliteProduits(Action):
 #
 #DEMANDER DETAILS PRODUITS
 #
-class DemanderDetailsProduitsForm(FormAction):
+class DemanderDetailsProduitsForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_details_produits"
 
@@ -252,7 +253,7 @@ class ActionDemanderDetailsProduits(Action):
 #
 #DEMANDER DATE DISPONIBILITE
 #
-class DemanderDateDisponibiliteForm(FormAction):
+class DemanderDateDisponibiliteForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_date_disponibilite"
 
@@ -301,7 +302,7 @@ class ActionDemanderDateDisponibilite(Action):
 #
 #DEMANDER ACHAT PRODUITS
 #
-class DemanderAchatProduitsForm(FormAction):
+class DemanderAchatProduitsForm(FormValidationAction):
     def name(self) -> Text:
         return "action_formulaire_demander_achat_produits"
 
